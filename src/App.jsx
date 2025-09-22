@@ -1,11 +1,11 @@
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+
 const App = () => {
   return (
-    <>
-      <div className="flex">
-        <h1>App</h1>
-        <h1>App</h1>
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Dashboard />}></Route>
+    </Routes>
   );
 };
 export default App;
